@@ -1,0 +1,172 @@
+/* General Layout */
+.app-container {
+  max-width: 480px;
+  margin: 20px auto;
+  padding: 16px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #333;
+}
+
+.app-title {
+  font-size: 1.6em;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Chat List */
+.chat-list {
+  margin-bottom: 20px;
+}
+
+.chat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.2s ease;
+}
+
+.chat-card:hover {
+  transform: translateY(-2px);
+  background: #f8f9fa;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.chat-time {
+  font-size: 0.8em;
+  color: gray;
+}
+
+.chat-last {
+  margin-top: 6px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Messages */
+.chat-title {
+  margin: 12px 0;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.messages {
+  border: 1px solid #eee;
+  background: #fafafa;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.message-bubble {
+  padding: 10px 14px;
+  margin: 8px 0;
+  border-radius: 18px;
+  font-size: 0.9em;
+  max-width: 75%;
+}
+
+.message-bubble.user {
+  background: #e8f0ff;
+  align-self: flex-start;
+}
+
+.message-bubble.ai {
+  background: #fff6d5;
+  border-left: 4px solid #f4c542;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn.primary {
+  background: #007bff;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #005ecb;
+}
+
+.btn.secondary {
+  background: #f3f3f3;
+  color: #333;
+  width: 100%;
+}
+
+.btn.secondary:hover {
+  background: #e1e1e1;
+}
+
+.btn.back {
+  background: #ddd;
+  margin-bottom: 10px;
+}
+
+.btn.small {
+  padding: 8px 14px;
+  font-size: 0.85em;
+}
+
+/* Input */
+.input, .chat-input input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.chat-input {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.chat-input input {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+/* AI Sections */
+.ai-section {
+  margin-top: 20px;
+}
+
+.ai-title {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.ai-block {
+  margin-bottom: 16px;
+}
+
+.placeholder {
+  padding: 12px;
+  border: 1px dashed #aaa;
+  margin-top: 6px;
+  border-radius: 8px;
+  background: #fafafa;
+  font-size: 0.9em;
+  color: #444;
+}
